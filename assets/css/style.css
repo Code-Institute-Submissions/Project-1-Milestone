@@ -1,0 +1,8 @@
+.form {
+  border: 1px solid black;
+}
+.copyright {
+  text-align: right;
+  font-style: italic;
+  font-weight: bold;
+}
