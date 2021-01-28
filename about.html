@@ -6,10 +6,113 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>About</title>
 </head>
 <body>
-    <header></header>
-    <footer></footer>
+    <header>
+        <div class="container-fluid pt-4 pt-md-5">
+            <div class="row">
+                <div class="col-sm-4 d-flex">
+                    <p class="mb-0 d-flex">
+                        <a href="http://www.facebook.com" target="_blank" rel="noopener"
+                            class="d-flex align-items-center justify-content-center">
+                            <i class="fab fa-facebook-square" aria-hidden="true"></i><span
+                                class="sr-only">Facebook</span>
+                        </a>
+                        <a href="http://www.instagram.com" target="_blank" rel="noopener"
+                            class="d-flex align-items-center justify-content-center">
+                            <i class="fab fa-instagram" aria-hidden="true"></i><span class="sr-only">Facebook</span>
+                        </a>
+                        <a href="http://www.pinterest.com" target="_blank" rel="noopener"
+                            class="d-flex align-items-center justify-content-center">
+                            <i class="fab fa-pinterest-square" aria-hidden="true"></i><span
+                                class="sr-only">Facebook</span>
+                        </a>
+                    </p>
+                </div>
+                <div class="col-sm-4 inner-container">
+                    <div id="brand">Worlds</div>
+                    <div>Bookstore and cafe</div>
+                </div>
+                <div class="col-sm-4 d-md-flex justify-content-md-end" id="phone-number">Contact us at: 0877234544</div>
+            </div>
+        </div>
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Menu</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>    
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="row">
+            <img src="assets/img/bookshop.jpg" class="col-12 col-lg-6 img-fluid books" alt="Bookshop">
+            <div class="col-12 col-lg-6 books">Our little bookshop is a comfortable and queit place where you can browse our
+                massive collection of books and sit down on one of our couches with a hot cup of coffee to read in peace. The smell of books
+                mixing with the scent of cofffee and pastries, and the comfy cushions give our shop a unique and
+                peaceful ambience. </div>
+        </div>
+        <div class="row order-lg-1">
+            <div class="col-12 col-lg-6 order-lg-2 books" id="map">
+                <iframe width="100%" height="350" src="https://maps.google.com/maps?q=cork&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                    style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="col-12 order-lg-3 books">Our little bookshop is located on the outskirts of Cork city center, near the river.</div>
+            <div class="col-6 col-lg-3">
+                Email:<br>
+                Phone number:<br>
+                Open hours:</div>
+            <div class="col-6  col-lg-3 books">
+            worlds@gmail.com<br>
+            087555555<br>    
+            Mon: 9am - 6pm<br>
+            Tue: 9am - 6pm<br>
+            Wed: 9am - 6pm<br>
+            Thu: 10am - 6pm<br>
+            Fri: 10am - 6pm<br>
+            Sat: 10pm - 6pm<br>
+            Sun: 10am - 4pm</div>
+        </div>    
+    </div>
+    <footer>
+        <div class="form">
+            <div>Sign up for our newsletter to get notified of any events, discounts and sales as they occur.</div>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="copyright">Copyright 2021</div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 </html>
