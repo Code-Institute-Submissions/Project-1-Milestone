@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
+
+body {
+  font-family: "Yusei Magic", sans-serif;
+  background-color: #f5e5c9;
+}
 .form {
   border: 1px solid black;
 }
@@ -5,4 +11,15 @@
   text-align: right;
   font-style: italic;
   font-weight: bold;
+}
+.inner-container {
+  text-align: center;
+  font-style: italic;
+}
+#phone-number {
+  text-align: center;
+}
+#brand{
+    font-size: x-large;
+    font-style: normal;
 }
