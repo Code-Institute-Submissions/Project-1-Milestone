@@ -6,10 +6,101 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>Gallery</title>
 </head>
 <body>
-    <header></header>
-    <footer></footer>
+    <header>
+        <div class="container-fluid pt-4 pt-md-5">
+            <div class="row">
+                <div class="col-sm-4 d-flex">
+                    <p class="mb-0 d-flex">
+                        <a href="http://www.facebook.com" target="_blank" rel="noopener"
+                            class="d-flex align-items-center justify-content-center">
+                            <i class="fab fa-facebook-square" aria-hidden="true"></i><span
+                                class="sr-only">Facebook</span>
+                        </a>
+                        <a href="http://www.instagram.com" target="_blank" rel="noopener"
+                            class="d-flex align-items-center justify-content-center">
+                            <i class="fab fa-instagram" aria-hidden="true"></i><span class="sr-only">Facebook</span>
+                        </a>
+                        <a href="http://www.pinterest.com" target="_blank" rel="noopener"
+                            class="d-flex align-items-center justify-content-center">
+                            <i class="fab fa-pinterest-square" aria-hidden="true"></i><span
+                                class="sr-only">Facebook</span>
+                        </a>
+                    </p>
+                </div>
+                <div class="col-sm-4 inner-container">
+                    <div id="brand">Worlds</div>
+                    <div>Bookstore and cafe</div>
+                </div>
+                <div class="col-sm-4 d-md-flex justify-content-md-end" id="phone-number">Contact us at: 0877234544</div>
+            </div>
+        </div>
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Menu</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Gallery <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 img-thumbnail"><img src="assets/img/bookshop.jpg" class="img-fluid" alt="Bookshop">
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 img-thumbnail"><img src="assets/img/cafe.jpg" class="img-fluid" alt="Cafe"></div>
+            <div class="col-12 col-md-6 col-lg-4 img-thumbnail"><img src="assets/img/cesar-viteri-693RRbiTAaI-unsplash.jpg"
+                    class="img-fluid" alt="Bookshop sign"></div>
+            <div class="col-12 col-md-6 col-lg-4 img-thumbnail"><img src="assets/img/clem-onojeghuo-0PPKxWtYh0g-unsplash.jpg"
+                    class="img-fluid" alt="Second-hand books"></div>
+            <div class="col-12 col-md-6 col-lg-4 img-thumbnail"><img src="assets/img/ergita-sela-rjm78PEyYLc-unsplash.jpg"
+                    class="img-fluid" alt="A book"></div>
+            <div class="col-12 col-md-6 col-lg-4 img-thumbnail"><img src="assets/img/kris-atomic-3b2tADGAWnU-unsplash.jpg"
+                    class="img-fluid" alt="Cups of coffee on a coffee table"></div>
+            <div class="col-12 col-md-6 col-lg-4 img-thumbnail"><img src="assets/img/new-books.jpg" class="img-fluid" alt="Books">
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 img-thumbnail"><img src="assets/img/pj-accetturo-XpD6Dkui-yg-unsplash.jpg"
+                    class="img-fluid" alt="Books"></div>
+            <div class="col-12 col-md-6 col-lg-4 img-thumbnail"><img src="assets/img/pj-accetturo-zEo0SJhIxZ4-unsplash.jpg"
+                    class="img-fluid" alt="Books"></div>
+            <div class="col-12 col-md-6 col-lg-4 img-thumbnail"><img src="assets/img/renee-fisher-wpMtTNPg6vk-unsplash.jpg"
+                    class="img-fluid" alt="Books"></div>
+            <div class="col-12 col-md-6 col-lg-4 img-thumbnail"><img src="assets/img/second-hand.jpg" class="img-fluid"
+                    alt="Second-hand books"></div>
+            <div class="col-12 col-md-6 col-lg-4 img-thumbnail"><img src="assets/img/alexandra-fuller-5hUHRyKtwEE-unsplash.jpg"
+                    class="img-fluid" alt="A book and a cup of coffee"></div>        
+        </div>
+    </div>
+    <footer>
+        <div class="form">
+            <div>Sign up for our newsletter to get notified of any events, discounts and sales as they occur.</div>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="copyright">Copyright 2021</div>
+    </footer>
 </body>
 </html>
