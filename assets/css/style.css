@@ -2,7 +2,6 @@
 
 body {
   font-family: "Yusei Magic", sans-serif;
-  background-color: #f5e5c9;
 }
 .form {
   border: 1px solid black;
@@ -12,14 +11,154 @@ body {
   font-style: italic;
   font-weight: bold;
 }
-.inner-container {
-  text-align: center;
-  font-style: italic;
+#bookstore{
+    width: 100%;
+    border-bottom: 1px solid #272C31;
+    padding-bottom: 30px;
 }
-#phone-number {
-  text-align: center;
+.books{
+    padding: 5%;
 }
-#brand{
-    font-size: x-large;
-    font-style: normal;
+
+/*Code borrowed from Code with Erum with a few changes*/
+:root {
+  --mainColor: #cda45e;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.navbar-brand {
+  color: var(--mainColor);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+.navbar-brand span {
+  color: #000;
+}
+.navbar-brand small {
+  display: block;
+  font-size: 13px;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 3px;
+}
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: var(--mainColor);
+}
+.social-media {
+  display: inline-block;
+}
+@media (max-width: 991px) {
+  .social-media {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .social-media {
+    margin: 10px;
+  }
+}
+.social-media p a {
+  border: 1px solid #000;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 4px;
+  text-decoration: none;
+}
+.social-media p a span {
+  color: #4d4d4d;
+}
+.social-media p a:hover {
+  background: var(--mainColor);
+  border-color: var(--mainColor);
+}
+.social-media p a:hover span {
+  color: #fff;
+}
+
+.main-navbar-light {
+  background: transparent !important;
+  z-index: 3;
+  padding: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 991.98px) {
+  .main-navbar-light {
+    background: #000 !important;
+    position: relative;
+    top: 0;
+    padding: 10px 15px;
+  }
+}
+@media (max-width: 991.98px) {
+  .main-navbar-light .navbar-nav {
+    padding-bottom: 10px;
+  }
+}
+.main-navbar-light .navbar-nav > .nav-item > .nav-link {
+  font-size: 15px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 500;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  opacity: 1 !important;
+}
+.main-navbar-light .navbar-nav > .nav-item > .nav-link:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--mainColor);
+  transition: all 0.3s ease;
+}
+.main-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
+  color: var(--mainColor);
+}
+.main-navbar-light .navbar-nav > .nav-item > .nav-link:hover:before {
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .main-navbar-light .navbar-nav > .nav-item > .nav-link {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .main-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
+    color: #fff;
+  }
+}
+@media (max-width: 767px) {
+  .main-navbar-light .navbar-nav > .nav-item > .nav-link {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
+.main-navbar-light .navbar-nav > .nav-item.active > a {
+  color: var(--mainColor);
+}
+.main-navbar-light .navbar-toggler {
+  border: none;
+  color: var(--mainColor) !important;
+  cursor: pointer;
+  padding-right: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+}
+.main-navbar-light .navbar-toggler:focus {
+  outline: none !important;
 }
