@@ -3,43 +3,174 @@
 body {
   font-family: "Yusei Magic", sans-serif;
 }
+
 .form {
-  border: 1px solid black;
+  border: 1px solid #C1944C;
 }
+
 .copyright {
   text-align: right;
   font-style: italic;
   font-weight: bold;
 }
+
+footer{
+    background-color: #000;
+    color: #C1944C;
+}
+
+@media (min-width:768px) {
+    footer{
+        background-color: #fff;
+    }
+    .form{
+        border: 1px solid #6C6C6C;
+    }
+}
+
 #bookstore{
     width: 100%;
     border-bottom: 1px solid #272C31;
     padding-bottom: 30px;
 }
+
 .books{
     padding: 5%;
 }
 
-#paragraph{
+@media (min-width:992px){
+    .books{
+        padding: 20px;
+    }
+}
+
+.paragraph{
     text-align: center;
 }
+
 #map{    
     border: 1px solid black;
 }
+
 #location{
     text-align: center;
 }
+
 .info{
     padding-top: 30px;
+}
+
+#info{
+    color: #C1944C;
+}
+
+.container-1 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.slogan{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Courier New', Courier, monospace;
+    color: #C1944C;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+
+/*Form*/
+* {
+  box-sizing: border-box;
+}
+
+.form-container input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.form-container input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.form-container{
+    padding: 10px;
+}
+
+.form-container input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.form-container input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.form-container form{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, .form-container input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
 
 /*Code borrowed from Code with Erum with a few changes*/
 :root {
   --mainColor: #cda45e;
 }
+
 body {
   font-family: "Poppins", sans-serif;
 }
+
 .navbar-brand {
   color: var(--mainColor);
   text-transform: uppercase;
@@ -48,9 +179,11 @@ body {
   line-height: 1.2;
   margin-bottom: 10px;
 }
+
 .navbar-brand span {
   color: #000;
 }
+
 .navbar-brand small {
   display: block;
   font-size: 13px;
@@ -58,23 +191,28 @@ body {
   color: rgba(0, 0, 0, 0.3);
   letter-spacing: 3px;
 }
+
 .navbar-brand:hover,
 .navbar-brand:focus {
   color: var(--mainColor);
 }
+
 .social-media {
   display: inline-block;
 }
+
 @media (max-width: 991px) {
   .social-media {
     margin: 0 auto;
   }
 }
+
 @media (max-width: 767px) {
   .social-media {
     margin: 10px;
   }
 }
+
 .social-media p a {
   border: 1px solid #000;
   width: 30px;
@@ -83,16 +221,21 @@ body {
   margin-right: 4px;
   text-decoration: none;
 }
+
 .social-media p a span {
   color: #4d4d4d;
 }
+
 .social-media p a:hover {
   background: var(--mainColor);
   border-color: var(--mainColor);
 }
+
 .social-media p a:hover span {
   color: #fff;
 }
+
+/*Navbar*/
 
 .main-navbar-light {
   background: transparent !important;
@@ -100,7 +243,8 @@ body {
   padding: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.5);
 }
-@media (max-width: 991.98px) {
+
+@media (max-width: 767px) {
   .main-navbar-light {
     background: #000 !important;
     position: relative;
@@ -108,11 +252,13 @@ body {
     padding: 10px 15px;
   }
 }
-@media (max-width: 991.98px) {
+
+@media (max-width: 767px) {
   .main-navbar-light .navbar-nav {
     padding-bottom: 10px;
   }
 }
+
 .main-navbar-light .navbar-nav > .nav-item > .nav-link {
   font-size: 15px;
   padding-top: 1.5rem;
@@ -126,6 +272,7 @@ body {
   position: relative;
   opacity: 1 !important;
 }
+
 .main-navbar-light .navbar-nav > .nav-item > .nav-link:before {
   position: absolute;
   bottom: 0;
@@ -137,13 +284,16 @@ body {
   background: var(--mainColor);
   transition: all 0.3s ease;
 }
+
 .main-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
   color: var(--mainColor);
 }
+
 .main-navbar-light .navbar-nav > .nav-item > .nav-link:hover:before {
   width: 100%;
 }
-@media (max-width: 992px) {
+
+@media (max-width: 767px) {
   .main-navbar-light .navbar-nav > .nav-item > .nav-link {
     padding-left: 0;
     padding-right: 0;
@@ -155,14 +305,17 @@ body {
     color: #fff;
   }
 }
+
 @media (max-width: 767px) {
   .main-navbar-light .navbar-nav > .nav-item > .nav-link {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
 }
+
 .main-navbar-light .navbar-nav > .nav-item.active > a {
   color: var(--mainColor);
 }
+
 .main-navbar-light .navbar-toggler {
   border: none;
   color: var(--mainColor) !important;
@@ -172,6 +325,36 @@ body {
   font-size: 16px;
   letter-spacing: 0.1em;
 }
+
 .main-navbar-light .navbar-toggler:focus {
   outline: none !important;
+}
+
+/*About page styling*/
+
+h2{
+    text-align: center;
+    color: #C1944C;
+}
+
+em{
+    font-weight: bold;
+}
+
+#values{
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        transform: translate(0, -50%);
+        justify-content: right;
+}
+
+@media (min-width:990px){
+    .paragraph p{
+        margin: 0;
+        position: absolute;               
+        top: 50%;                         
+        transform: translate(0, -50%);
+        font-size: large;
+    }
 }
