@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--REQUIRED META TAGS-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BOOTSTRAP CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--FONT AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>About</title>
 </head>
 <body>
-    <!--Header from code with erum with some changes-->
+    <!--HEADER FROM CODE WITH ERUM WITH SOME CHANGES-->
     <header>
         <div class="container-fluid px-md-5 pt-4 pt-md-5">
             <div class="row justify-content-between">
                 <div class="col-md-8 order-md-last">
                     <div class="row">
                         <div class="col-md-6 text-center">
-                            <a class="navbar-brand" href="#">Worlds
+                            <a class="navbar-brand" href="index.html">Worlds
                                 <small class="text-dark">
                                     Bookstore and cafe
                                 </small>
@@ -25,22 +28,23 @@
                         </div>
                     </div>
                 </div>
+                <!--SOCIAL MEDIA ICONS-->
                 <div class="col-md-4 d-flex">
                     <div class="social-media">
                         <p class="mb-0 d-flex">
-                            <a href="#" class="d-flex align-items-center 
+                            <a href="https://www.facebook.com/" target="_blank" class="d-flex align-items-center 
                             justify-content-center">
                                 <span class="fab fa-facebook">
                                     <i class="sr-only">Facebook</i>
                                 </span>
                             </a>
-                            <a href="#" class="d-flex align-items-center 
+                            <a href="https://twitter.com/" target="_blank" class="d-flex align-items-center 
                             justify-content-center">
                                 <span class="fab fa-twitter">
                                     <i class="sr-only">Twitter</i>
                                 </span>
                             </a>
-                            <a href="#" class="d-flex align-items-center 
+                            <a href="https://www.instagram.com/" target="_blank" class="d-flex align-items-center 
                             justify-content-center">
                                 <span class="fab fa-instagram">
                                     <i class="sr-only">Instagram</i>
@@ -51,7 +55,8 @@
                 </div>
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-dark main-navbar bg-dark main-navbar-light ml-auto" id="a-navbar">
+        <!--NAVBAR-->
+        <nav class="navbar navbar-expand-md navbar-dark main-navbar bg-dark main-navbar-light ml-auto" id="a-navbar">
             <div class="container-fluid">
                 <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#my-nav"
                     aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,7 +72,10 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="gallery.html">Gallery</a>
-                        </li>    
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>   
                     </ul>
                 </div>
             </div>
@@ -75,49 +83,56 @@
     </header>
     <div class="container">
         <div class="row">
-            <img src="assets/img/bookshop.jpg" class="col-12 col-lg-6 img-fluid books" alt="Bookshop">
-            <div class="col-12 col-lg-6 books" id="paragraph">Our little bookshop is a comfortable and queit place where you can browse our
+            <img src="assets/img/bookshop.jpg" class="col-12 col-lg-6 img-fluid books order-lg-1" alt="Bookshop">
+            <div class="col-12 col-lg-6 books paragraph order-lg-2"><p>Our little bookshop is a               comfortable and queit place where you can browse our
                 massive collection of books and sit down on one of our couches with a hot cup of coffee to read in peace. The smell of books
                 mixing with the scent of cofffee and pastries, and the comfy cushions give our shop a unique and
-                peaceful ambience. </div>
+                peaceful ambience. </p></div>
         </div>
-        <div class="row order-lg-1">
-            <div class="col-12 col-lg-6 order-lg-2 books" id="map">
-                <iframe width="100%" height="350" src="https://maps.google.com/maps?q=cork&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-                    style="border:0" allowfullscreen></iframe>
+        <div class="row">
+            <img src="assets/img/founder.jpg" class="col-12 col-lg-6 img-fluid books order-lg-4" alt="Bookshop">
+            <div class="col-12 col-lg-6 books paragraph order-lg-3" id="founder">
+                <p>Our little bookshop was founded in 2018 by Maya Kirk. Maya like the rest of her family
+                is a self-proclaimed bookworm, she prefers spending her time curled up with a good book and a tasty cup of hot chocolate.
+                She founded Worlds bookstore and cafe because she wanted to create a place where she and others could come to escape the outside world
+                for a while and get in a fictional one. </p>
             </div>
-            <div class="col-12 order-lg-3 books" id="location">Our little bookshop is located on the outskirts of Cork city center, near the river.</div>
-                <div class="col-6 col-lg-3 info">
-                    Email:<br>
-                    Phone number:<br>
-                    Open hours:
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center">Our values</h2>
+            </div>
+            <div class="col-12">
+                <div class="books">
+                    <!--Text taken from https://www.powells.com/info/about-us-->
+                    <em>We love everything about books.</em> As entertainment, as tools of discovery, and as timeless works of art, we believe books have the unique ability to transport us and transform our world view.<br>
+                    <em>We're conversation starters.</em> We're an eclectic team of readers with broad interests and strong feelings about the books on our shelves. And we're committed to sharing our knowledge and enthusiasm with our customers every day.<br>
+                    <em>We're nothing without our customers.</em> Worlds would not be the destination it is now without its loyal customers.<br>
+                    <em>We recognize that every reader is different.</em> We know readers are as unique and complex as the books we sell. We, in turn, make every effort to engage with our customers, respond to their needs, and learn from their feedback.<br>
+                    <em>We're creative and resourceful.</em> We built our name on innovative bookselling, and we continue to evolve by remaining curious and inventive.<br>
+                    <em>We support readers and writers.</em> Through literary events, original content, and a vibrant online community, we're dedicated to promoting great authors and their books, literacy, and freedom of expression.<br>
+                    <em>We exchange ideas.</em> We all play a role in Worlds success, and it's the sharing of our unique perspectives that generates exceptional ideas.<br>
                 </div>
-            <div class="col-6  col-lg-3 info">
-            worlds@gmail.com<br>
-            087555555<br>    
-            Mon: 9am - 6pm<br>
-            Tue: 9am - 6pm<br>
-            Wed: 9am - 6pm<br>
-            Thu: 10am - 6pm<br>
-            Fri: 10am - 6pm<br>
-            Sat: 10pm - 6pm<br>
-            Sun: 10am - 4pm
             </div>
         </div>    
     </div>
+    <!--FOOTER-->
     <footer>
-        <div class="form">
-            <div>Sign up for our newsletter to get notified of any events, discounts and sales as they occur.</div>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-        <div class="copyright">Copyright 2021</div>
+        <div class="row">
+            <div class="col-12 form">
+                <div>Sign up for our newsletter to get notified of any events, discounts and sales as they occur.</div>
+                <form id="newsletter">
+                    <label class="d-none d-sm-inline" for="n-name">Name:</label>
+                    <input class="d-none d-sm-inline" type="text" id="n-name" name="name">
+                    <label for="n-email">Email:</label>
+                    <input type="email" id="n-email" name="email">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class=" col-12 copyright">Copyright 2021</div>
+        </div>    
     </footer>
+    <!--SCRIPT-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

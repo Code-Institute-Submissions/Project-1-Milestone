@@ -1,11 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
-
 body {
-  font-family: "Yusei Magic", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
+
+/*Footer*/
 
 .form {
   border: 1px solid #C1944C;
+  background-color: #000;
+  justify-content: center;
 }
 
 .copyright {
@@ -15,18 +17,39 @@ body {
 }
 
 footer{
-    background-color: #000;
     color: #C1944C;
 }
 
+#n-email, #n-name{
+    border-radius: 4px;
+}
+
+#newsletter label, #n-name, #n-email{
+    margin-left: 20px;
+}
+
 @media (min-width:768px) {
-    footer{
-        background-color: #fff;
-    }
     .form{
         border: 1px solid #6C6C6C;
+        background-color: #fff;        
+    }
+    #newsletter label{
+    margin-left: 40px;
     }
 }
+
+@media (min-width:992px){
+    #newsletter label{
+    margin-left: 150px;
+    }
+}
+
+@media (max-width:638px){
+    footer{
+        font-size : 0.8rem;
+    }
+}
+/*Home page*/
 
 #bookstore{
     width: 100%;
@@ -34,40 +57,16 @@ footer{
     padding-bottom: 30px;
 }
 
-.books{
-    padding: 5%;
-}
-
-@media (min-width:992px){
-    .books{
-        padding: 20px;
+@media (min-width:768px){
+    #bookstore{
+        height: 70vh;
     }
 }
 
-.paragraph{
-    text-align: center;
-}
-
-#map{    
-    border: 1px solid black;
-}
-
-#location{
-    text-align: center;
-}
-
-.info{
-    padding-top: 30px;
-}
-
-#info{
-    color: #C1944C;
-}
-
-.container-1 {
-    position: relative;
-    text-align: center;
-    color: white;
+@media (min-width:992px){
+    #bookstore{
+        height: 85vh;
+    }
 }
 
 .slogan{
@@ -82,10 +81,56 @@ footer{
     font-size: 30px;
     line-height: 1.2;
     margin-bottom: 10px;
+    text-shadow: 3px 3px 4px #000000;
 }
 
+.books{
+    padding: 5%;
+}
 
-/*Form*/
+@media (min-width:992px){
+    .books{
+        padding: 20px;
+    }
+}
+
+#map{    
+    border: 1px solid black;
+}
+
+#location{
+    text-align: center;
+}
+
+#info{
+    color: #C1944C;
+    text-align: center;
+    margin: 0;                          
+    font-size: large;
+}
+/*
+#info span{
+    color: black;
+    padding-left: 20px;
+}*/
+.info{
+    color: black;
+}
+
+@media (min-width:990px){
+    .info{
+        margin: 0;
+        font-size: large;
+    }
+}
+
+.container-1 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/*Form for contact page*/
 * {
   box-sizing: border-box;
 }
@@ -116,7 +161,7 @@ label {
 }
 
 .form-container input[type=submit] {
-  background-color: #4CAF50;
+  background-color: #C1944C;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -126,7 +171,7 @@ label {
 }
 
 .form-container input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #6C6C6C;
 }
 
 .form-container form{
@@ -163,13 +208,12 @@ label {
 }
 
 /*Code borrowed from Code with Erum with a few changes*/
+
 :root {
   --mainColor: #cda45e;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-}
+/*Navbar brand*/
 
 .navbar-brand {
   color: var(--mainColor);
@@ -196,6 +240,8 @@ body {
 .navbar-brand:focus {
   color: var(--mainColor);
 }
+
+/*Social media*/
 
 .social-media {
   display: inline-block;
@@ -341,12 +387,8 @@ em{
     font-weight: bold;
 }
 
-#values{
-        margin: 0;
-        position: absolute;
-        left: 50%;
-        transform: translate(0, -50%);
-        justify-content: right;
+.paragraph{
+    text-align: center;
 }
 
 @media (min-width:990px){

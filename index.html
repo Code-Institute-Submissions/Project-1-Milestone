@@ -1,57 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--REQUIRED META TAGS-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BOOTSTRAP CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--FONT AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Home</title>
 </head>
 <body>
-    <!--Header from code with erum with some changes-->
+    <!--HEADER FROM CODE WITH ERUM WITH SOME CHANGES-->
     <header>
         <div class="container-fluid px-md-5 pt-4 pt-md-5">
-        <div class="row justify-content-between">
-            <div class="col-md-8 order-md-last">
-                <div class="row">
-                    <div class="col-md-6 text-center">
-                        <a class="navbar-brand" href="#">Worlds
-                            <small class="text-dark">
-                                Bookstore and cafe
-                            </small>
-                        </a>
+            <div class="row justify-content-between">
+                <div class="col-md-8 order-md-last">
+                    <div class="row">
+                        <div class="col-md-6 text-center">
+                            <a class="navbar-brand" href="#">Worlds
+                                <small class="text-dark">
+                                    Bookstore and cafe
+                                </small>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--SOCIAL MEDIA ICONS-->
+                <div class="col-md-4 d-flex">
+                    <div class="social-media">
+                        <p class="mb-0 d-flex">
+                            <a href="https://www.facebook.com/" target="_blank" class="d-flex align-items-center 
+                            justify-content-center">
+                                <span class="fab fa-facebook">
+                                    <i class="sr-only">Facebook</i>
+                                </span>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="d-flex align-items-center 
+                            justify-content-center">
+                                <span class="fab fa-twitter">
+                                    <i class="sr-only">Twitter</i>
+                                </span>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="d-flex align-items-center 
+                            justify-content-center">
+                                <span class="fab fa-instagram">
+                                    <i class="sr-only">Instagram</i>
+                                </span>
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 d-flex">
-                <div class="social-media">
-                    <p class="mb-0 d-flex">
-                        <a href="#" class="d-flex align-items-center 
-                          justify-content-center">
-                            <span class="fab fa-facebook">
-                                <i class="sr-only">Facebook</i>
-                            </span>
-                        </a>
-                        <a href="#" class="d-flex align-items-center 
-                          justify-content-center">
-                            <span class="fab fa-twitter">
-                                <i class="sr-only">Twitter</i>
-                            </span>
-                        </a>
-                        <a href="#" class="d-flex align-items-center 
-                          justify-content-center">
-                            <span class="fab fa-instagram">
-                                <i class="sr-only">Instagram</i>
-                            </span>
-                        </a>
-                    </p>
-                </div>
-            </div>
         </div>
-    </div>
-        <nav class="navbar navbar-expand-lg navbar-dark main-navbar bg-dark main-navbar-light ml-auto" id="a-navbar">
+        <!--NAVBAR-->
+        <nav class="navbar navbar-expand-md navbar-dark main-navbar bg-dark main-navbar-light ml-auto navbar-default sticky-top">
             <div class="container-fluid">
                 <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#my-nav"
                     aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,41 +73,57 @@
                         <li class="nav-item">
                             <a class="nav-link" href="gallery.html">Gallery</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
     <div>
-        <img src="assets/img/book-3480216_1920.jpg" class="img-fluid" id="bookstore" alt="Books">
+        <div class="container-1">
+            <img src="assets/img/open-book.jpg" class="img-fluid" id="bookstore" alt="Books">
+            <!--SLOGAN OVER MAIN IMAGE-->
+            <div class="slogan">A book worm's paradise</div>
+        </div>
         <div class="container">
             <div class="row">
                 <img src="assets/img/new-books.jpg" class="col-12 col-md-6 col-lg-4 img-fluid order-lg-1 books"
                     alt="new books">
-                <p class="col-12 col-md-6 col-lg-4 order-lg-4 books">We offer a wide range of new releases, fiction, non-fiction, fantasy, thriller, classics and more.</p>
+                <p class="col-12 col-md-6 col-lg-4 order-lg-4 books">
+                Our little bookstore offers a wide diverse variety of new releases, fiction, non-fiction, fantasy, thriller, classics and more.
+                If you are looking for your new favourite book,
+                you have come to the right place.
+                </p>
                 <img src="assets/img/second-hand.jpg" class="col-12 col-md-6 col-lg-4 img-fluid order-lg-2 books"
                     alt="second hand books">
-                <p class="col-12 col-md-6 col-lg-4 order-lg-5 books">We offer a wide range of second-hand books in great
-                    condition, you can also sell books you no longer want for in store credit.</p>
+                <p class="col-12 col-md-6 col-lg-4 order-lg-5 books">We offer a wide range of second-hand books in great condition, you can also sell books you no longer want for in store credit.
+                </p>
                 <img src="assets/img/cafe.jpg" class="col-12 col-md-6 col-lg-4 img-fluid order-lg-3 books" alt="cafe">
-                <p class="col-12 col-md-6 col-lg-4 order-lg-6 books">We have a little cafe with comfortable
-                    couches where you can sit down with a warm beverage and read.</p>
+                <p class="col-12 col-md-6 col-lg-4 order-lg-6 books">We have a little cafe with a wide variety of pastries, drinks and comfortable
+                couches where you can sit down with a warm beverage and enjoy your new purchases.
+                </p>
             </div>
         </div>
     </div>
+    <!--FOOTER-->
     <footer>
-        <div class="form">
-            <div>Sign up for our newsletter to get notified of any events, discounts and sales as they occur.</div>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-        <div class="copyright">Copyright 2021</div>
+        <div class="row">
+            <div class="col-12 form">
+                <div>Sign up for our newsletter to get notified of any events, discounts and sales as they occur.</div>
+                <form id="newsletter">
+                    <label class="d-none d-sm-inline" for="n-name">Name:</label>
+                    <input class="d-none d-sm-inline" type="text" id="n-name" name="name">
+                    <label for="n-email">Email:</label>
+                    <input type="email" id="n-email" name="email">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class=" col-12 copyright">Copyright 2021</div>
+        </div>    
     </footer>
+    <!--SCRIPT-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

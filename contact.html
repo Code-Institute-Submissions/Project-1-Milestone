@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--REQUIRED META TAGS-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BOOTSTRAP CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--FONT AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <title>Home</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Contact</title>
 </head>
 <body>
-    <!--Header from code with erum with some changes-->
+    <!--HEADER FROM CODE WITH ERUM WITH SOME CHANGES-->
     <header>
         <div class="container-fluid px-md-5 pt-4 pt-md-5">
             <div class="row justify-content-between">
                 <div class="col-md-8 order-md-last">
                     <div class="row">
                         <div class="col-md-6 text-center">
-                            <a class="navbar-brand" href="#">Worlds
+                            <a class="navbar-brand" href="index.html">Worlds
                                 <small class="text-dark">
                                     Bookstore and cafe
                                 </small>
@@ -29,19 +32,19 @@
                 <div class="col-md-4 d-flex">
                     <div class="social-media">
                         <p class="mb-0 d-flex">
-                            <a href="https://www.facebook.com/" class="d-flex align-items-center 
+                            <a href="https://www.facebook.com/" target="_blank" class="d-flex align-items-center 
                             justify-content-center">
                                 <span class="fab fa-facebook">
                                     <i class="sr-only">Facebook</i>
                                 </span>
                             </a>
-                            <a href="https://twitter.com/" class="d-flex align-items-center 
+                            <a href="https://twitter.com/" target="_blank" class="d-flex align-items-center 
                             justify-content-center">
                                 <span class="fab fa-twitter">
                                     <i class="sr-only">Twitter</i>
                                 </span>
                             </a>
-                            <a href="https://www.instagram.com/" class="d-flex align-items-center 
+                            <a href="https://www.instagram.com/" target="_blank" class="d-flex align-items-center 
                             justify-content-center">
                                 <span class="fab fa-instagram">
                                     <i class="sr-only">Instagram</i>
@@ -124,17 +127,26 @@
                 </div>
             </div>
             <div class="row">
-                <input type="submit" value="Submit">
+                <div class="col-12">
+                    <input type="submit" value="Submit">
+                </div>
             </div>
         </form>
         <!--LOCATION AND CONTACT INFORMATION-->
-        <div class="row order-lg-1">
+        <div class="row">
             <!--MAP-->
             <div class="col-12 col-lg-6 order-lg-2 books" id="map">
                 <iframe width="100%" height="350" src="https://maps.google.com/maps?q=cork&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
                     style="border:0" allowfullscreen></iframe>
             </div>
             <!--CONTACT INFORMATION-->
+            <!--<div class="col-12 col-lg-6" id="info">
+                <div class="text-center text-lg-left">Email:<span class="text-lg-right">worlds@gmail.com</span><br></div>
+                <div class="text-center text-lg-left">Phone number:<span class="text-lg-right">087555555</span><br></div>
+                <div class="text-center text-lg-left">Open hours:<span class="text-lg-right">Mon-Fri: 9am - 6pm</span><br></div>
+                <span>Sat-Sun: 10am - 4pm</span>
+            </div>
+            -->
             <div class="col-6 col-lg-3 info" id="info">
                 Email:<br>
                 Phone number:<br>
@@ -143,32 +155,28 @@
             <div class="col-6  col-lg-3 info">
                 worlds@gmail.com<br>
                 087555555<br>    
-                Mon: 9am - 6pm<br>
-                Tue: 9am - 6pm<br>
-                Wed: 9am - 6pm<br>
-                Thu: 10am - 6pm<br>
-                Fri: 10am - 6pm<br>
-                Sat: 10pm - 6pm<br>
-                Sun: 10am - 4pm
+                Mon-Fri: 9am - 6pm<br>
+                Sat-Sun: 10am - 4pm
             </div>
         </div>    
     </div>
-
-
     <!--FOOTER-->
     <footer>
-        <div class="form">
-            <div>Sign up for our newsletter to get notified of any events, discounts and sales as they occur.</div>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="n-name" name="name">
-                <label for="email">Email:</label>
-                <input type="email" id="n-email" name="email">
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-        <div class="copyright">Copyright 2021</div>
+        <div class="row">
+            <div class="col-12 form">
+                <div>Sign up for our newsletter to get notified of any events, discounts and sales as they occur.</div>
+                <form id="newsletter">
+                    <label class="d-none d-sm-inline" for="n-name">Name:</label>
+                    <input class="d-none d-sm-inline" type="text" id="n-name" name="name">
+                    <label for="n-email">Email:</label>
+                    <input type="email" id="n-email" name="email">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class=" col-12 copyright">Copyright 2021</div>
+        </div>    
     </footer>
+    <!--SCRIPT-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
