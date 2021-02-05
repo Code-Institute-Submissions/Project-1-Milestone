@@ -140,30 +140,30 @@ As a customer, I'd like to easily sign up for the bookstore's newsletter.
 ## 5. Deployment
 Deploying the project
 
-Select settings on the menu at the top of repository.
-Find the Githup pages section.
-Click on the menu under Source and the select master branch then click save.
-The website is now deployed.
-The link to the site can be found in settings in the Github pages section.
+- Select settings on the menu at the top of repository.
+- Find the Githup pages section.
+- Click on the menu under Source and the select master branch then click save.
+- The website is now deployed.
+- The link to the site can be found in settings in the Github pages section.
 
 Running the project locally
 
-First you must clone this project.
-Under the menu click on the Code dropdown menu.
-In the https section, copy the url.
-In your local terminal open Git Bash.
-Change your working directory to the one where you want to clone the directory.
-Type in git clone and then paste in the url you copied.
-Then just press enter.
+- First you must clone this project.
+- Under the menu click on the Code dropdown menu.
+- In the https section, copy the url.
+- In your local terminal open Git Bash.
+- Change your working directory to the one where you want to clone the directory.
+- Type in git clone and then paste in the url you copied.
+- Then just press enter.
 
 ## 6. Credits
 
 ### 6.1. Content
-I got the header from [code with erum](https://codepen.io/EJW4/pen/xxOjdKm) to which I only made a few modifications.
-I used the map I found on https://mdbootstrap.com/docs/b4/jquery/javascript/google-maps/ with only one modification.
-I took a lot of inspiration from https://www.w3schools.com/
-For the readme file I took a lot of inspiration from https://github.com/fernandagil/ms1-nonnapepita-restaurant/blob/master/README.md
-I took some text from [Powell's](https://www.powells.com/info/about-us)
+- I got the header from [code with erum](https://codepen.io/EJW4/pen/xxOjdKm) to which I only made a few modifications.
+- I used the map I found on https://mdbootstrap.com/docs/b4/jquery/javascript/google-maps/ with only one modification.
+- I took a lot of inspiration from https://www.w3schools.com/
+- For the readme file I took a lot of inspiration from https://github.com/fernandagil/ms1-nonnapepita-restaurant/blob/master/README.md
+- I took some text from [Powell's](https://www.powells.com/info/about-us)
 ### 6.2. Media
 The pictures I used on this site are free stock images from [Unsplash](https://unsplash.com/)
 ### 6.3. Acknowledgements
